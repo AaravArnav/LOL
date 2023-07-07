@@ -68,6 +68,12 @@
       }
 
       draw();
+
+      // Update canvas size when the window is resized
+      window.addEventListener("resize", function () {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      });
     </script>
   </body>
 </html>
